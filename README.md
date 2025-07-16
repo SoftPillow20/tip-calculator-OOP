@@ -47,7 +47,7 @@ This challenge has a very simple idea but the thing that gives me the hard time 
 
 Another challenging thing is writing addEventListener in OOP paradigm in JavaScript. I recently learned OOP in JS and one thing that suddenly came to my mind is to redo this project with OOP paradigm and practice my OOP knowledge. The 'this' keyword has been tricky to work with specially with callback functions in OOP.
 
-I learned a lot of tricks from doing this project. Whenever I faced a roadblock, most of the time what fixed it was to do a trick in JS, HTML and CSS. However, these tricks requires a chunk of fundamental knowledge which is why I always have the MDN web docs open on my browser. I also utilizes AI by asking questions, but thankfully I rarely do them specially when I needed it most.
+I learned a lot of tricks from doing this project. Whenever I faced a roadblock, most of the time what fixed it was to do a trick in JS, HTML and CSS. However, these tricks requires a chunk of fundamental knowledge which is why I always have the MDN web docs open on my browser. I also utilizes AI by asking questions, but thankfully I rarely do them and only when I needed it most.
 
 Lastly, I've also learned previously from a course that it is better to write a flowchart and an architecture for the application before writing codes for it. I think this is one of the reason why I was able to do it in 3 days. I managed to structure the program's logic which gives me the clear view of what to do when writing the code.
 
