@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header was used for SEO and accessibility -->
+    <header class="header">
+      <!-- <h1 class="header-primary">SPLITTER</h1> -->
+      <img src="images/logo.svg" alt="Splitter title" />
+    </header>
+    <main class="main">
+      <div class="main-content grid--gap-md">
+        <!-- calculate -->
+        <div class="calculate-container">
+          <div class="bill-form">
+            <div class="label-container">
+              <label class="label" for="bill">Bill</label>
+              <p class="warning warning--bill hidden">Can't be zero</p>
+            </div>
+            <div class="rel-position">
+              <input
+                class="input input--bill"
+                id="bill"
+                type="text"
+                placeholder="0"
+              />
+              <img
+                class="icon-svg"
+                src="images/icon-dollar.svg"
+                alt="dollar icon"
+              />
+            </div>
+          </div>
+
+          <div class="tips-container">
+            <p class="label">Select Tip %</p>
+            <!-- div tag will be used for grid -->
+            <div class="tips grid grid--3-cols grid--gap-sm">
+              <button type="submit" class="btn btn--tips">
+                <span class="btn--five">5%</span>
+              </button>
+              <button type="submit" class="btn btn--tips btn--active">
+                <span class="btn--ten">10%</span>
+              </button>
+              <button type="submit" class="btn btn--tips btn--fifteen">
+                15%
+              </button>
+              <button type="submit" class="btn btn--tips btn--twenty-five">
+                25%
+              </button>
+              <button type="submit" class="btn btn--tips btn--fifty">
+                50%
+              </button>
+              <div class="custom rel-position">
+                <label class="label-custom" for="custom">Custom</label>
+                <input
+                  class="btn btn--tips btn--custom input--custom"
+                  id="custom"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="num-people-form">
+            <div class="label-container">
+              <label class="label" for="num-people">Number of People</label>
+              <p class="warning warning--numPeople hidden">Can't be zero</p>
+            </div>
+            <div class="rel-position">
+              <input
+                class="input input--numPeople"
+                id="num-people"
+                type="text"
+                placeholder="0"
+              />
+              <img
+                class="icon-svg"
+                src="images/icon-person.svg"
+                alt="dollar icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- display -->
+        <div class="display-container">
+          <div class="display-content">
+            <div class="display--flex">
+              <div>
+                <p class="display-text">Tip Amount</p>
+                <p class="display-subtext">/ person</p>
+              </div>
+              <p class="amount">$<span class="tip">0.00</span></p>
+            </div>
+            <div class="display--flex">
+              <div>
+                <p class="display-text">Total</p>
+                <p class="display-subtext">/ person</p>
+              </div>
+              <p class="amount">$<span class="total">0.00</span></p>
+            </div>
+          </div>
+          <button class="btn btn--default btn--reset">RESET</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
